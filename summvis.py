@@ -286,11 +286,13 @@ if __name__ == "__main__":
 
     st.set_page_config(layout="wide")
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--path', type=str, default='data')
-    parser.add_argument('--no_clean', action='store_true', default=False,
-                        help="Do not clean text (remove extraneous spaces, newlines).")
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--path', type=str, default='data')
+    # parser.add_argument('--no_clean', action='store_true', default=False,
+    #                     help="Do not clean text (remove extraneous spaces, newlines).")
+    # args = parser.parse_args()
+    args.path = "data/update-summ-preprocessed"
+    args.no_clean = False
 
     nlp, is_lg = get_nlp()
 
