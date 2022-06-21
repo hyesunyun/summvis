@@ -291,8 +291,7 @@ if __name__ == "__main__":
     # parser.add_argument('--no_clean', action='store_true', default=False,
     #                     help="Do not clean text (remove extraneous spaces, newlines).")
     # args = parser.parse_args()
-    args.path = "data/update-summ-preprocessed"
-    args.no_clean = False
+    args = {"path": "data/update-summ-preprocessed", "no_clean": False}
 
     nlp, is_lg = get_nlp()
 
