@@ -309,7 +309,7 @@ if __name__ == "__main__":
             raise FileNotFoundError(f"File not found: {path.name}")
     else:
         file_index = 0
-    col1, col2 = st.columns((3, 1))
+    col1, col2 = st.beta_columns((3, 1))
     filename = col1.selectbox(label="File:", options=files, index=file_index)
     dataset = load_dataset(str(path_dir / filename), nlp=nlp)
 
