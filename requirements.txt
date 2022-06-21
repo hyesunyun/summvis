@@ -1,6 +1,6 @@
 # environment.yml must be kept in sync
 spacy==3.0.3
-click==7.1.2
+click==8.0.4
 streamlit==0.77.0
 st-annotated-text==1.1.0
 transformers==4.2.2
