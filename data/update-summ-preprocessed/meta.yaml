@@ -1,44 +1,71 @@
 column_dtypes:
-  BertscoreAligner:spacy:document:spacy:summary:LEDtext2editschained: &id001 !!python/name:meerkat.columns.list_column.ListColumn ''
+  BertscoreAligner:spacy:document:spacy:summary:BioT5text2editschained: &id001 !!python/name:meerkat.columns.list_column.ListColumn ''
+  BertscoreAligner:spacy:document:spacy:summary:BioT5text2fulledits: *id001
+  BertscoreAligner:spacy:document:spacy:summary:BioT5text2text: *id001
+  BertscoreAligner:spacy:document:spacy:summary:LEDtext2editschained: *id001
   BertscoreAligner:spacy:document:spacy:summary:LEDtext2fulledits: *id001
   BertscoreAligner:spacy:document:spacy:summary:LEDtext2text: *id001
   BertscoreAligner:spacy:document:spacy:summary:original: *id001
   BertscoreAligner:spacy:document:spacy:summary:reference: *id001
+  BertscoreAligner:spacy:summary:reference:spacy:summary:BioT5text2editschained: *id001
+  BertscoreAligner:spacy:summary:reference:spacy:summary:BioT5text2fulledits: *id001
+  BertscoreAligner:spacy:summary:reference:spacy:summary:BioT5text2text: *id001
   BertscoreAligner:spacy:summary:reference:spacy:summary:LEDtext2editschained: *id001
   BertscoreAligner:spacy:summary:reference:spacy:summary:LEDtext2fulledits: *id001
   BertscoreAligner:spacy:summary:reference:spacy:summary:LEDtext2text: *id001
   BertscoreAligner:spacy:summary:reference:spacy:summary:original: *id001
+  NGramAligner:spacy:document:spacy:summary:BioT5text2editschained: *id001
+  NGramAligner:spacy:document:spacy:summary:BioT5text2fulledits: *id001
+  NGramAligner:spacy:document:spacy:summary:BioT5text2text: *id001
   NGramAligner:spacy:document:spacy:summary:LEDtext2editschained: *id001
   NGramAligner:spacy:document:spacy:summary:LEDtext2fulledits: *id001
   NGramAligner:spacy:document:spacy:summary:LEDtext2text: *id001
   NGramAligner:spacy:document:spacy:summary:original: *id001
   NGramAligner:spacy:document:spacy:summary:reference: *id001
+  NGramAligner:spacy:summary:reference:spacy:summary:BioT5text2editschained: *id001
+  NGramAligner:spacy:summary:reference:spacy:summary:BioT5text2fulledits: *id001
+  NGramAligner:spacy:summary:reference:spacy:summary:BioT5text2text: *id001
   NGramAligner:spacy:summary:reference:spacy:summary:LEDtext2editschained: *id001
   NGramAligner:spacy:summary:reference:spacy:summary:LEDtext2fulledits: *id001
   NGramAligner:spacy:summary:reference:spacy:summary:LEDtext2text: *id001
   NGramAligner:spacy:summary:reference:spacy:summary:original: *id001
+  StaticEmbeddingAligner:spacy:document:spacy:summary:BioT5text2editschained: *id001
+  StaticEmbeddingAligner:spacy:document:spacy:summary:BioT5text2fulledits: *id001
+  StaticEmbeddingAligner:spacy:document:spacy:summary:BioT5text2text: *id001
   StaticEmbeddingAligner:spacy:document:spacy:summary:LEDtext2editschained: *id001
   StaticEmbeddingAligner:spacy:document:spacy:summary:LEDtext2fulledits: *id001
   StaticEmbeddingAligner:spacy:document:spacy:summary:LEDtext2text: *id001
   StaticEmbeddingAligner:spacy:document:spacy:summary:original: *id001
   StaticEmbeddingAligner:spacy:document:spacy:summary:reference: *id001
+  StaticEmbeddingAligner:spacy:summary:reference:spacy:summary:BioT5text2editschained: *id001
+  StaticEmbeddingAligner:spacy:summary:reference:spacy:summary:BioT5text2fulledits: *id001
+  StaticEmbeddingAligner:spacy:summary:reference:spacy:summary:BioT5text2text: *id001
   StaticEmbeddingAligner:spacy:summary:reference:spacy:summary:LEDtext2editschained: *id001
   StaticEmbeddingAligner:spacy:summary:reference:spacy:summary:LEDtext2fulledits: *id001
   StaticEmbeddingAligner:spacy:summary:reference:spacy:summary:LEDtext2text: *id001
   StaticEmbeddingAligner:spacy:summary:reference:spacy:summary:original: *id001
   document: &id002 !!python/name:meerkat.columns.pandas_column.PandasSeriesColumn ''
   preprocessed_document: *id002
+  preprocessed_summary:BioT5text2editschained: *id002
+  preprocessed_summary:BioT5text2fulledits: *id002
+  preprocessed_summary:BioT5text2text: *id002
   preprocessed_summary:LEDtext2editschained: *id002
   preprocessed_summary:LEDtext2fulledits: *id002
   preprocessed_summary:LEDtext2text: *id002
   preprocessed_summary:original: *id002
   preprocessed_summary:reference: *id002
   spacy:document: &id003 !!python/name:meerkat.columns.spacy_column.SpacyColumn ''
+  spacy:summary:BioT5text2editschained: *id003
+  spacy:summary:BioT5text2fulledits: *id003
+  spacy:summary:BioT5text2text: *id003
   spacy:summary:LEDtext2editschained: *id003
   spacy:summary:LEDtext2fulledits: *id003
   spacy:summary:LEDtext2text: *id003
   spacy:summary:original: *id003
   spacy:summary:reference: *id003
+  summary:BioT5text2editschained: *id002
+  summary:BioT5text2fulledits: *id002
+  summary:BioT5text2text: *id002
   summary:LEDtext2editschained: *id002
   summary:LEDtext2fulledits: *id002
   summary:LEDtext2text: *id002
